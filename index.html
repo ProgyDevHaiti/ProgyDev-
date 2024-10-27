@@ -3,10 +3,28 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Redirection en cours...</title>
-   <!-- Redirection après 5 secondes vers un autre site -->
-   <meta http-equiv="refresh" content="0.1; url=https://progydev.rf.gd">
-   <style>
+   <meta name="google-site-verification" content="EjOablA6V9WmIUWSbpb8NDMJjgpgRIpqg2M-NkDhsmQ" />
+   <meta name="description" content="Découvrez ProgyDev, votre ressource pour des solutions de développement informatique. Explorez nos services et ressources dès maintenant.">
+   <meta name="keywords" content="ProgyDev, développement, informatique, solutions, redirection, web development, technologies, programmation">
+   <meta name="author" content="ProgyDev">
+   <link rel="canonical" href="https://progydev.rf.gd/">
+   
+   <script type="application/ld+json">
+   {
+     "@context": "https://schema.org",
+     "@type": "Organization",
+     "name": "ProgyDev",
+     "url": "https://progydev.rf.gd",
+     "logo": "https://progydev.rf.gd/2.png",
+     "sameAs": [
+       "https://www.facebook.com/profile.php?id=61565665481559",
+       "https://twitter.com/JeanRonel22"
+     ]
+   }
+   </script>
+
+   <title>ProgyDev Haïti services </title>
+      <style>
       body {
          display: flex;
          flex-direction: column;
@@ -19,6 +37,32 @@
          color: #333;
          margin: 0;
       }
+      /* Logo section */
+      .logo-section {
+         margin-top: 20px;
+         opacity: 0;
+         transition: opacity 1.5s ease;
+      }
+      .logo img {
+         width: 150px;
+         height: auto;
+      }
+      /* Banners section */
+      .banners-section {
+         margin: 20px 0;
+         display: flex;
+         gap: 10px;
+         justify-content: center;
+         opacity: 0;
+         transition: opacity 1.5s ease;
+      }
+      .banner img {
+         width: 300px;
+         height: auto;
+         border-radius: 8px;
+         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      /* Loader and link style */
       .loader {
          border: 4px solid #f3f3f3;
          border-top: 4px solid #3498db;
@@ -41,11 +85,57 @@
          text-decoration: underline;
       }
    </style>
+   
 </head>
 <body>
-   <!--<h1>Redirection en cours...</h1>
-   <p>Vous serez redirigé vers notre nouveau site dans quelques secondes.</p>
+   <h1>Bienvenue chez ProgyDev</h1>
+   <p>Chez ProgyDev, nous offrons une variété de solutions de développement informatique adaptées à vos besoins. Notre équipe d'experts est prête à vous accompagner dans la réalisation de vos projets.</p>
+
+   <!-- Logo Section -->
+   <div class="logo-section" id="logo-section">
+      <div class="logo">
+         <img src="2.png" alt="Logo de ProgyDev - Solutions de Développement Informatique">
+      </div>
+   </div>
+
+   <!-- Banners Section -->
+
+   
+   <!-- Banners Section -->
+   <div class="banners-section" id="banners-section">
+      <div class="banner">
+         <img src="B.png" alt="Affiche promotionnelle 1">
+      </div>
+ 
+   </div>
+   <h1>Redirection vers ProgyDev</h1>
+   <p id="countdown">Redirection dans <span id="countdown-timer">1</span> secondes...</p>
    <div class="loader"></div>
-   <p>Si la redirection ne fonctionne pas, <a href="https://exemple.com">cliquez ici</a>.</p>-->
+   <p>Si la redirection ne fonctionne pas, <a href="https://progydev.rf.gd">cliquez ici pour visiter ProgyDev</a>.</p>
+  <script>
+      // Fonction pour animer l'apparition du logo et des bannières
+      window.addEventListener('load', () => {
+         document.getElementById('logo-section').style.opacity = 1;
+         document.getElementById('banners-section').style.opacity = 1;
+    });
+
+      // Compte à rebours pour la redirection
+      let countdown = 1;
+      const countdownTimer = document.getElementById('countdown-timer');
+      const interval = setInterval(() => {
+         countdown--;
+         countdownTimer.textContent = countdown;
+         if (countdown <= 0) {
+            clearInterval(interval);
+            // Confirmation de redirection
+          
+               window.location.href = "https://progydev.rf.gd";
+            
+         }
+      }, 1000);
+   </script>
+   <script>
+      // JavaScript pour la redirection
+   </script>
 </body>
 </html>
